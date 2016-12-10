@@ -1,0 +1,14 @@
+/* CSS declarations go here */
+@import "custom.css";
+
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("http://www.w3schools.com/w3images/mac.jpg");
+    min-height: 100vh;
+}
+.w3-navbar li a {
+    padding: 16px;
+    float: left;
+}

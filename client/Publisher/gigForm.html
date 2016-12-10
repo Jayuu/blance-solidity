@@ -1,0 +1,44 @@
+<template name="gigForm">
+  <div class="">
+
+    <div class="w3-container w3-black">
+      <h2>Gig</h2>
+    </div>
+
+    <form class="w3-container w3-padding">
+
+
+      <div class="w3-padding-16">
+        <label class="w3-label w3-text-grey w3-validate">Title</label>
+        <input class="w3-input w3-border" required type="text" name="title">
+      </div>
+
+      <div class="w3-padding-16">
+        <label class="w3-label  w3-text-grey w3-validate">Breif Description</label>
+        <textarea rows="3" class="w3-input w3-border"  type="text" name="description" required></textarea>
+      </div>
+      <div class="w3-padding-16">
+        <label class="w3-label  w3-text-grey w3-validate">Budget (Ether)</label>
+        <input class="w3-input w3-border"  type="number" name="budget" required>
+      </div>
+      <div class="w3-padding-16">
+        <label class="w3-label  w3-text-grey w3-validate">Article Category</label>
+        <select class="w3-select w3-padding"  name="category">
+          <option value="0" selected>Any</option>
+          <option value="1">Finance</option>
+          <option value="2">Analysis</option>
+          <option value="3">Sponsored Story</option>
+          <option value="4">PR</option>
+        </select>
+      </div>
+      <div class="w3-padding">
+        <div class="w3-padding">
+          <button type="submit" value="Submit" class="new-gig w3-btn w3-padding w3-teal" style="width:120px">Submit &nbsp; ❯</button>
+        </div>
+      </div>
+
+    </form>
+
+  </div>
+
+</template>

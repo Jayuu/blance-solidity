@@ -1,0 +1,43 @@
+<template name="homeNav">
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <ul class="w3-navbar w3-white w3-card-2" id="myNavbar">
+      <li>
+        <a href="#home" class="w3-wide">LOGO</a>
+      </li>
+      <!-- Right-sided navbar links -->
+      <li class="w3-right w3-hide-small">
+        <a href="#about">ABOUT</a>
+        <!-- <a href="#team"><i class="fa fa-user"></i> TEAM</a> -->
+        <a href="#gigs"><i class="fa fa-th"></i> GIGS</a>
+        <!-- <a href="#pricing"><i class="fa fa-usd"></i> PRICING</a> -->
+        <a href="#publishers"><i class="fa fa-wordpress"></i> PUBLISHERS</a>
+        <a href="#authors"><i class="fa fa-group"></i> AUTHORS</a>
+
+        <!-- <a href="#work"><i class="fa fa-th"></i> WORK</a> -->
+
+        <a href="#contact"><i class="fa fa-envelope"></i> CONTACT</a>
+
+      </li>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      <li>
+        <a href="javascript:void(0)" class="w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+          <i class="fa fa-bars w3-padding-right w3-padding-left"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Sidenav on small screens when clicking the menu icon -->
+  <nav class="w3-sidenav w3-black w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidenav">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-large w3-padding-16">Close ×</a>
+    <a href="#about" onclick="w3_close()">ABOUT</a>
+    <a href="#gigs"><i class="fa fa-th"></i> GIGS</a>
+    <!-- <a href="#pricing"><i class="fa fa-usd"></i> PRICING</a> -->
+    <a href="#publishers"><i class="fa fa-wordpress"></i> PUBLISHERS</a>
+    <a href="#authors"><i class="fa fa-group"></i> AUTHORS</a>
+    <!-- <a href="#work" onclick="w3_close()">WORK</a>
+    <a href="#pricing" onclick="w3_close()">PRICING</a> -->
+    <a href="#contact" onclick="w3_close()">CONTACT</a>
+  </nav>
+</template>

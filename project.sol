@@ -1,4 +1,5 @@
 pragma solidity ^0.4.0;
+
 /**
 Contract meant for doing escrow activities
 */
@@ -127,8 +128,6 @@ contract blance{
             }
 
           }
-
-
 
 
         }
